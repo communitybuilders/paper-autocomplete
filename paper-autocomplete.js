@@ -172,6 +172,10 @@ Polymer({
         clip: rect(1px, 1px, 1px, 1px);
       }
 
+      paper-input {
+        @apply --paper-autocomplete-input;
+      }
+
       paper-autocomplete-suggestions {
         --suggestions-wrapper: {
           @apply --paper-autocomplete-suggestions-wrapper;
