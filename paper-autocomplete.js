@@ -502,6 +502,7 @@ Polymer({
     this._value = null;
     this.text = '';
     this._text = '';
+    this.selectedOption = null;
 
     this._fireEvent(option, 'reset-blur');
 
