@@ -10,11 +10,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*
   This example shows how to implement your own autocomplete with custom template and search function.
 */
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
 import '@polymer/polymer/polymer-legacy.js';
 
 import '@polymer/paper-item/paper-item.js';

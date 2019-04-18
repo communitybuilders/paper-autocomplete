@@ -5,30 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
   <title>paper-autocomplete demo</title>
-  <script src="../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
-
-  <script type="module" src="../../@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
-  <script type="module" src="../../@polymer/iron-demo-helpers/demo-snippet.js"></script>
-  <script type="module" src="../../@polymer/paper-toast/paper-toast.js"></script>
-  <script type="module" src="../../@polymer/paper-icon-button/paper-icon-button.js"></script>
-  <script type="module" src="../../@polymer/iron-form/iron-form.js"></script>
-  <script type="module" src="../../elliptical-sass/elliptical-sass.js"></script>
-  <script type="module" src="../../css-docs/css-docs.js"></script>
-  <script type="module" src="../paper-autocomplete.js"></script>
-
-  <script type="module" src="./account-autocomplete.js"></script>
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
 
   <link rel="stylesheet" href="demo.css">
 
-  <!-- FIXME(polymer-modulizer):
-        These imperative modules that innerHTML your HTML are
-        a hacky way to be sure that any mixins in included style
-        modules are ready before any elements that reference them are
-        instantiated, otherwise the CSS @apply mixin polyfill won't be
-        able to expand the underlying CSS custom properties.
-        See: https://github.com/Polymer/polymer-modulizer/issues/154
-        -->
-    <script type="module">
+<script type="module">
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `<custom-style>
@@ -53,10 +34,10 @@ document.body.appendChild($_documentContainer.content);
 
 <body unresolved>
 
-  <script type="module">
-const $_documentContainer = document.createElement('template');
+<script type="module">
+  const $_documentContainer = document.createElement('template');
 
-$_documentContainer.innerHTML = `<div class="vertical-section-container centered">
+  $_documentContainer.innerHTML = `<div class="vertical-section-container centered">
     <h3>Local Data-Source Binding</h3>
     <p>
       Directly bind a local array to paper-autocomplete. The component internally will filter suggestions based on the
@@ -198,26 +179,23 @@ $_documentContainer.innerHTML = `<div class="vertical-section-container centered
     </demo-snippet>
   </div>`;
 
-document.body.appendChild($_documentContainer.content);
+  document.body.appendChild($_documentContainer.content);
 </script>
 
-  <script type="module">
+<script type="module">
+  import '@polymer/iron-demo-helpers/demo-pages-shared-styles.js';
+  import '@polymer/iron-demo-helpers/demo-snippet.js';
+  import '@polymer/paper-toast/paper-toast.js';
+  import '@polymer/paper-icon-button/paper-icon-button.js';
+  import '@polymer/iron-form/iron-form.js';
+  import '../paper-autocomplete.js';
+  import './account-autocomplete.js';
+  import { Base } from '@polymer/polymer/polymer-legacy.js';
+
 const $_documentContainer = document.createElement('template');
 $_documentContainer.innerHTML = `<paper-toast></paper-toast>`;
 document.body.appendChild($_documentContainer.content);
-</script>
 
-  <script type="module">
-import '@polymer/iron-demo-helpers/demo-pages-shared-styles.js';
-import '@polymer/iron-demo-helpers/demo-snippet.js';
-import '@polymer/paper-toast/paper-toast.js';
-import '@polymer/paper-icon-button/paper-icon-button.js';
-import '@polymer/iron-form/iron-form.js';
-import 'elliptical-sass/elliptical-sass.js';
-import 'css-docs/css-docs.js';
-import '../paper-autocomplete.js';
-import './account-autocomplete.js';
-import { Base } from '@polymer/polymer/polymer-legacy.js';
 function createMockString() {
   var textString = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var length = Math.random() * (10 - 4) + 4;
