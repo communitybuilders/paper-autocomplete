@@ -116,21 +116,17 @@
 
   @demo demo/paper-autocomplete-suggestions-demo.html
 */
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
+
 import '@polymer/polymer/polymer-legacy.js';
 
 import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-ripple/paper-ripple.js';
-import '@polymer/paper-material/paper-material.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 import { Templatizer } from '@polymer/polymer/lib/legacy/templatizer-behavior.js';
 import { dom, flush } from '@polymer/polymer/lib/legacy/polymer.dom.js';
 import { PolymerElement } from '@polymer/polymer/polymer-element.js';
+import '@polymer/paper-styles/element-styles/paper-material-styles.js';
 
 var DIRECTION = {
   UP: 'up',
@@ -148,8 +144,8 @@ var KEY_CODES = {
 
 Polymer({
   _template: html`
-    <style>
-      paper-material {
+    <style include="paper-material-styles">
+      #suggestionsWrapper {
         display: none;
         position: absolute;
         width: 100%;
@@ -196,7 +192,7 @@ Polymer({
     <div>
       <!-- unselectable is needed to fix an issue related to the focus being taken away when clicking in the
        results scrollbar -->
-      <paper-material elevation="1" id="suggestionsWrapper" unselectable="on"></paper-material>
+      <div elevation="1" id="suggestionsWrapper" unselectable="on" class="paper-material"></div>
 
       <!-- Default suggestion template -->
       <template id="defaultTemplate">

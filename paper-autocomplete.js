@@ -115,7 +115,6 @@ import '@polymer/iron-icons/iron-icons.js';
 import './paper-autocomplete-suggestions.js';
 import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-ripple/paper-ripple.js';
-import '@polymer/paper-material/paper-material.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 // This Polyfill is needed for this version to work with IE11 and Polymer 1.x

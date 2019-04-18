@@ -35,32 +35,32 @@
     "variants": "polymer install --variants && polymer serve -o -H 0.0.0.0"
   },
   "devDependencies": {
+    "@polymer/iron-component-page": "^3.0.0-pre.18",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
+    "@polymer/iron-form": "^3.0.0-pre.18",
+    "@polymer/iron-test-helpers": "^3.0.0-pre.18",
+    "@polymer/paper-button": "^3.0.0-pre.18",
+    "@polymer/paper-toast": "^3.0.0-pre.18",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
     "eslint": "^4.0.0",
     "eslint-plugin-html": "^3.0.0",
     "sinon": "^3.0.0",
-    "web-component-tester": "^6.0.1",
-    "web-component-tester-istanbul": "^0.10.0",
-    "@polymer/iron-component-page": "^3.0.0-pre.18",
     "wct-browser-legacy": "^0.0.1-pre.11",
-    "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
-    "@polymer/paper-toast": "^3.0.0-pre.18",
-    "@polymer/iron-test-helpers": "^3.0.0-pre.18",
-    "@polymer/iron-form": "^3.0.0-pre.18",
-    "@polymer/paper-button": "^3.0.0-pre.18",
-    "@webcomponents/webcomponentsjs": "^2.0.0"
+    "web-component-tester": "^6.0.1",
+    "web-component-tester-istanbul": "^0.10.0"
   },
   "dependencies": {
-    "@polymer/polymer": "^3.0.0",
-    "@polymer/paper-input": "^3.0.0-pre.18",
     "@polymer/iron-flex-layout": "^3.0.0-pre.18",
-    "@polymer/paper-icon-button": "^3.0.0-pre.18",
     "@polymer/iron-icon": "^3.0.0-pre.18",
     "@polymer/iron-icons": "^3.0.0-pre.18",
     "@polymer/iron-iconset": "^3.0.0-pre.18",
     "@polymer/iron-iconset-svg": "^3.0.0-pre.18",
+    "@polymer/paper-icon-button": "^3.0.0-pre.18",
+    "@polymer/paper-input": "^3.0.0-pre.18",
     "@polymer/paper-item": "^3.0.0-pre.18",
     "@polymer/paper-ripple": "^3.0.0-pre.18",
-    "@polymer/paper-material": "^3.0.0-pre.18"
+    "@polymer/paper-styles": "^3.0.1",
+    "@polymer/polymer": "^3.0.0"
   },
   "resolutions": {
     "inherits": "2.0.3",
